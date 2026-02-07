@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi proyecto</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Bienvenida/o a tu asistente de operaciones</h1>
+    </header>
+    <main>
+        <section class="main">
+            <div class="main__title">
+                <h3>Realiza cálculos y conversiones de forma simple</h3>
+            </div>
+            <div class="operaciones">
+                <p>Selecciona la operación que desees realizar</p>
+
+                <!-- Menú de opciones -->
+                <select id="opciones">
+                    <option value="">-- Elige --</option>
+                    <option value="sumar">1. Sumar Datos</option>
+                    <option value="restar">2. Restar Datos</option>
+                    <option value="multiplicar">3. Multiplicar Datos</option>
+                    <option value="dividir">4. Dividir Datos</option>
+                    <option value="promedio">5. Promedio Datos</option>
+                    <option value="finalizar">6. Finalizar</option>
+                </select>
+            </div>
+        </section>
+        <section class="menu-bar">
+            <h3>Conversiones</h3>
+            <button data-option="longitud">Conversor de Longitud</button>
+            <button data-option="tiempo">Conversor de tiempo</button>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
